@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escalação de Times JS</title>
+
+  <style>i{font-style: normal;}</style>
+</head>
+<body>
+  <h1>Escalação de Times</h1>
+  <hr>
+
+  <h2>Lista de camisas disponíveis:</h2>
+  <ul id="shirtslist">
+    <li>01. <i id="player1">Livre</i></li>
+    <li>02. <i id="player2">Livre</i></li>
+    <li>03. <i id="player3">Livre</i></li>
+    <li>04. <i id="player4">Livre</i></li>
+    <li>05. <i id="player5">Livre</i></li>
+    <li>06. <i id="player6">Livre</i></li>
+    <li>07. <i id="player7">Livre</i></li>
+    <li>08. <i id="player8">Livre</i></li>
+    <li>09. <i id="player9">Livre</i></li>
+    <li>10. <i id="player10">Livre</i></li>
+    <li>11. <i id="player11">Livre</i></li>
+  </ul>
+    <h2>Jogadores e suas posições:</h2>
+  <ul id="shirtslist">
+    <li>01. <i id="posname1"></i></li>
+    <li>02. <i id="posname2"></i></li>
+    <li>03. <i id="posname3"></i></li>
+    <li>04. <i id="posname4"></i></li>
+    <li>05. <i id="posname5"></i></li>
+    <li>06. <i id="posname6"></i></li>
+    <li>07. <i id="posname7"></i></li>
+    <li>08. <i id="posname8"></i></li>
+    <li>09. <i id="posname9"></i></li>
+    <li>10. <i id="posname10"></i></li>
+    <li>11. <i id="posname11"></i></li>
+  </ul>
+  <br>
+  <h3>Adicionar ou Alterar Jogadores:</h3>
+  <label for="addPlayer">Nome: </label>
+  <input type="text" id="addPlayer" name="AddPlayer">
+
+  <label for="addPosition">Posição: </label>
+  <input type="text" id="addPosition" name="AddPosition">
+
+  <label for="addNumber">Número da Camisa: </label>
+  <input type="text" name="addNumber" id="addNumber">
+
+  <input type="button" value="Send" onclick="changeList()">
+  <br>
+
+  <h3>Deletar Jogadores:</h3>
+  <label for="removeNumber">Número da Camisa: </label>
+  <input type="text" name="removeNumber" id="removeNumber">
+
+  <input type="button" value="Remove" onclick="removeNumber()">
+
+  <script src="./js.js"></script>
+</body>
+</html>
